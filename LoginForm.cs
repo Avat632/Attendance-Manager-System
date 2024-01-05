@@ -55,7 +55,6 @@ namespace AMS
 
                     if (count > 0)
                     {
-                        // Retrieve user's name based on UserID
                         string userNameQuery = $"SELECT Name FROM Participants WHERE UserID = '{userID}'";
                         MySqlCommand userNameCmd = new MySqlCommand(userNameQuery, connection);
                         string userName = userNameCmd.ExecuteScalar()?.ToString();

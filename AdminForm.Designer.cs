@@ -104,7 +104,7 @@
             this.Btn_logout.Font = new System.Drawing.Font("Tahoma", 12F);
             this.Btn_logout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(242)))), ((int)(((byte)(241)))));
             this.Btn_logout.Location = new System.Drawing.Point(466, 82);
-            this.Btn_logout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_logout.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_logout.Name = "Btn_logout";
             this.Btn_logout.Size = new System.Drawing.Size(94, 38);
             this.Btn_logout.TabIndex = 10;
@@ -136,7 +136,7 @@
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Font = new System.Drawing.Font("Tahoma", 10F);
             this.tabControl1.Location = new System.Drawing.Point(16, 124);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(548, 323);
@@ -160,9 +160,9 @@
             this.tabPage1.Controls.Add(this.Btn_createUser);
             this.tabPage1.Controls.Add(this.label_currentEvent);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(540, 294);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add User.";
@@ -184,7 +184,7 @@
             this.comboBoxUserRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(53)))));
             this.comboBoxUserRole.FormattingEnabled = true;
             this.comboBoxUserRole.Location = new System.Drawing.Point(126, 200);
-            this.comboBoxUserRole.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxUserRole.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxUserRole.Name = "comboBoxUserRole";
             this.comboBoxUserRole.Size = new System.Drawing.Size(156, 24);
             this.comboBoxUserRole.TabIndex = 22;
@@ -217,30 +217,30 @@
             // 
             this.textBoxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(53)))));
             this.textBoxPassword.Location = new System.Drawing.Point(126, 159);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPassword.MinimumSize = new System.Drawing.Size(368, 30);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(370, 24);
+            this.textBoxPassword.Size = new System.Drawing.Size(370, 30);
             this.textBoxPassword.TabIndex = 19;
             // 
             // textBoxEmail
             // 
             this.textBoxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(53)))));
             this.textBoxEmail.Location = new System.Drawing.Point(126, 119);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxEmail.MinimumSize = new System.Drawing.Size(368, 30);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(370, 24);
+            this.textBoxEmail.Size = new System.Drawing.Size(370, 30);
             this.textBoxEmail.TabIndex = 18;
             // 
             // textBoxName
             // 
             this.textBoxName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(53)))));
             this.textBoxName.Location = new System.Drawing.Point(126, 78);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxName.MinimumSize = new System.Drawing.Size(368, 30);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(370, 24);
+            this.textBoxName.Size = new System.Drawing.Size(370, 30);
             this.textBoxName.TabIndex = 1;
             // 
             // label10
@@ -310,7 +310,7 @@
             this.Btn_createUser.Font = new System.Drawing.Font("Tahoma", 12F);
             this.Btn_createUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(242)))), ((int)(((byte)(241)))));
             this.Btn_createUser.Location = new System.Drawing.Point(350, 225);
-            this.Btn_createUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_createUser.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_createUser.MinimumSize = new System.Drawing.Size(114, 32);
             this.Btn_createUser.Name = "Btn_createUser";
             this.Btn_createUser.Size = new System.Drawing.Size(144, 50);
@@ -341,9 +341,9 @@
             this.tabPage2.Controls.Add(this.Selection_roles);
             this.tabPage2.Controls.Add(this.Grid_usersList);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(540, 294);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "List of Users.";
@@ -378,7 +378,7 @@
             this.Selection_roles.Font = new System.Drawing.Font("Tahoma", 11F);
             this.Selection_roles.FormattingEnabled = true;
             this.Selection_roles.Location = new System.Drawing.Point(128, 7);
-            this.Selection_roles.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Selection_roles.Margin = new System.Windows.Forms.Padding(2);
             this.Selection_roles.Name = "Selection_roles";
             this.Selection_roles.Size = new System.Drawing.Size(156, 26);
             this.Selection_roles.TabIndex = 21;
@@ -392,7 +392,7 @@
             this.Grid_usersList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Grid_usersList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.Grid_usersList.Location = new System.Drawing.Point(0, 37);
-            this.Grid_usersList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Grid_usersList.Margin = new System.Windows.Forms.Padding(2);
             this.Grid_usersList.Name = "Grid_usersList";
             this.Grid_usersList.RowHeadersWidth = 62;
             this.Grid_usersList.RowTemplate.Height = 28;
@@ -406,9 +406,9 @@
             this.tabPage4.Controls.Add(this.label2);
             this.tabPage4.Controls.Add(this.Grid_eventsList);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage4.Size = new System.Drawing.Size(540, 294);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "List of Classes.";
@@ -433,7 +433,7 @@
             this.Grid_eventsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Grid_eventsList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.Grid_eventsList.Location = new System.Drawing.Point(0, 37);
-            this.Grid_eventsList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Grid_eventsList.Margin = new System.Windows.Forms.Padding(2);
             this.Grid_eventsList.Name = "Grid_eventsList";
             this.Grid_eventsList.RowHeadersWidth = 62;
             this.Grid_eventsList.RowTemplate.Height = 28;
@@ -446,7 +446,7 @@
             this.pictureBox1.BackgroundImage = global::AMS.Properties.Resources.Icon;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(6, 32);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(82, 99);
             this.pictureBox1.TabIndex = 19;
@@ -466,7 +466,7 @@
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Attendance Manager System (Admin)";

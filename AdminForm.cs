@@ -63,7 +63,7 @@ namespace AMS
         private void Btn_createUser_Click(object sender, EventArgs e)
         {
             string name = textBoxName.Text;
-            string email = textBoxName.Text;
+            string email = textBoxEmail.Text;
             string password = textBoxPassword.Text;
             string userRole = comboBoxUserRole.SelectedItem?.ToString();
 
@@ -72,8 +72,7 @@ namespace AMS
                 using (MySqlConnection connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
-
-                    // Check if the email already exists
+                    
                     string checkExistingUserQuery = "SELECT COUNT(*) FROM Users WHERE Email = @Email";
                     MySqlCommand checkExistingUserCmd = new MySqlCommand(checkExistingUserQuery, connection);
                     checkExistingUserCmd.Parameters.AddWithValue("@Email", email);
@@ -85,7 +84,6 @@ namespace AMS
                         return;
                     }
 
-                    // Insert user details into Users table
                     string insertUserQuery = "INSERT INTO Users (Email, Password, UserRole) VALUES (@Email, @Password, @UserRole)";
                     MySqlCommand insertUserCmd = new MySqlCommand(insertUserQuery, connection);
                     insertUserCmd.Parameters.AddWithValue("@Email", email);
@@ -94,12 +92,10 @@ namespace AMS
 
                     insertUserCmd.ExecuteNonQuery();
 
-                    // Get the UserID of the newly created user
                     string getUserIdQuery = "SELECT LAST_INSERT_ID()";
                     MySqlCommand getUserIdCmd = new MySqlCommand(getUserIdQuery, connection);
                     int userID = Convert.ToInt32(getUserIdCmd.ExecuteScalar());
 
-                    // Insert details into Participants or Instructors table based on UserRole
                     if (userRole == "Participant")
                     {
                         string insertParticipantQuery = "INSERT INTO Participants (UserID, Name) VALUES (@UserID, @Name)";
@@ -149,7 +145,7 @@ namespace AMS
                     while (reader.Read())
                     {
                         string role = reader["UserRole"].ToString();
-                        Selection_roles.Items.Add(role); // Updated to use Selection_roles
+                        Selection_roles.Items.Add(role); 
                     }
 
                     reader.Close();

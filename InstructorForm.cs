@@ -93,7 +93,6 @@ namespace AMS
 
         private void Btn_create_Click(object sender, EventArgs e)
         {
-            // Retrieve the event details from the form
             string eventName = Input_eventName.Text;
             DateTime startDateTime = TimePicker_start.Value;
             DateTime endDateTime = TimePicker_end.Value;

@@ -68,8 +68,8 @@ namespace AMS
                         }
                         else
                         {
-                            label_currentEvent.Text = "unfortunately, There is no active class ";
-                            Selection_attend.Hide(); // Hide the ComboBox
+                            label_currentEvent.Text = "Unfortunately, There is no active class ";
+                            Selection_attend.Hide(); 
                             Btn_attend.Hide();
                         }
                     }
@@ -118,7 +118,6 @@ namespace AMS
 
                     int selectedEventID = Convert.ToInt32(Selection_attend.SelectedValue);
 
-                    // Check if the user has already attended the selected event
                     string attendQuery = $"SELECT COUNT(*) FROM Attend WHERE ParticipantID = {participantUserID} AND EventID = {selectedEventID}";
 
                     MySqlCommand attendCmd = new MySqlCommand(attendQuery, connection);
@@ -131,7 +130,6 @@ namespace AMS
                     }
                     else
                     {
-                        // Check if the event has been held
                         string eventCompletionQuery = $"SELECT Completed FROM Events WHERE EventID = {selectedEventID}";
 
                         MySqlCommand eventCompletionCmd = new MySqlCommand(eventCompletionQuery, connection);
